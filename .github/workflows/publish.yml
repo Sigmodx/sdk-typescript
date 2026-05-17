@@ -1,3 +1,5 @@
+# Requires NPM_TOKEN: npm "Automation" granular token (bypasses 2FA for CI).
+# Classic/publish tokens with 2FA enabled will fail with EOTP.
 name: Publish to npm
 
 on:
