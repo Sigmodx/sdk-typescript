@@ -1,0 +1,33 @@
+{
+  "name": "@sigmodx/sdk",
+  "version": "0.1.0",
+  "description": "TypeScript/JavaScript SDK for Sigmodx — AI agent audit infrastructure",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": ["dist"],
+  "scripts": {
+    "build": "tsc",
+    "test": "jest",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": ["sigmodx", "ai-agents", "audit", "compliance", "sox", "attestation"],
+  "author": "Cinmon / Sigmodx",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sigmodx/sdk-typescript"
+  },
+  "homepage": "https://sigmodx.com/docs/agent-api",
+  "dependencies": {},
+  "devDependencies": {
+    "typescript": "^5.0.0",
+    "jest": "^29.0.0",
+    "ts-jest": "^29.0.0",
+    "@types/jest": "^29.0.0",
+    "@types/node": "^20.0.0"
+  },
+  "jest": {
+    "preset": "ts-jest",
+    "testEnvironment": "node"
+  }
+}
